@@ -41,16 +41,16 @@ Este proyecto es un backend que gestiona dos colecciones: **Usuarios** y **Produ
    ```bash
    docker-compose ps
    ```
-   Deberías ver algo como:
+   verás algo como:
    ```
    Name                    Command                  State                 Ports
    ----------------------------------------------------------------------------------
-   sample-mongo   docker-entrypoint.sh mongod   Up      0.0.0.0:27017->27017/tcp
-   sample-backend docker-entrypoint.sh npm s    Up      0.0.0.0:3000->3000/tcp
+   mongo   docker-entrypoint.sh mongod   Up      0.0.0.0:27017->27017/tcp
+   backend docker-entrypoint.sh npm s    Up      0.0.0.0:3000->3000/tcp
    ```
 
 3. **Probar la aplicación**:
-   * Abre Postman, Insomnia o tu cliente REST preferido
+   * Abre Postman, o tu cliente REST preferido
    * La API está disponible en `http://localhost:3000`
 
 ## Endpoints Disponibles
@@ -135,7 +135,7 @@ Este proyecto es un backend que gestiona dos colecciones: **Usuarios** y **Produ
 └── README.md                      # Este archivo
 ```
 
-## Pruebas con Postman/Insomnia
+## Pruebas con Postman
 
 Para probar la API, puedes usar las siguientes solicitudes:
 
