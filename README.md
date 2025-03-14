@@ -18,8 +18,8 @@ Este proyecto es un backend que gestiona dos colecciones: **Usuarios** y **Produ
 
 1. **Clona** este repositorio:
    ```bash
-   git clone https://github.com/usuario/mi-backend.git
-   cd mi-backend
+   git clone https://github.com/Daniel171202/backend-1parcial-tecno2
+   cd backend-1parcial-tecno2
    ```
 
 2. (Opcional) **Configura** un archivo `.env` en la raíz, si deseas personalizar las variables de entorno:
