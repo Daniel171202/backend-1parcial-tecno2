@@ -19,6 +19,16 @@ export const obtenerProductos = async (req, res) => {
   }
 };
 
+export const obtenerProductoById = async (req, res) => {
+  try {
+    const producto = await Producto.findById(req.params.id);
+    if (!producto) return res.status(404).json({ error: 'Producto no encontrado' });
+    res.status(200).json(producto);
+  } catch (error) {
+    res.status(500).json({ error: 'Error al obtener el producto', details: error.message });
+  }
+}
+
 export const actualizarProducto = async (req, res) => {
   try {
     const producto = await Producto.findByIdAndUpdate(req.params.id, req.body, { new: true });
